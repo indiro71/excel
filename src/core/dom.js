@@ -36,6 +36,13 @@ class Dom {
         }
         return this;
     }
+
+    css(styles = {}) {
+        console.log(213)
+        Object.keys(styles).forEach(key => {
+            this.$el.style[key] = styles[key];
+        });
+    }
 }
 
 export function $(selector) {
