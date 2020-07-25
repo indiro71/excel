@@ -5,7 +5,7 @@ const CODES = {
 
 function createCell(index, i) {
     return `
-        <div class="cell" data-row="${i+1}" data-col="${toChar(index)}" contenteditable>${toChar(index)}${i+1}</div>
+        <div class="cell" data-row="${i+1}" data-id="${i+1}:${index+1}" data-col="${toChar(index)}" contenteditable></div>
     `;
 }
 
